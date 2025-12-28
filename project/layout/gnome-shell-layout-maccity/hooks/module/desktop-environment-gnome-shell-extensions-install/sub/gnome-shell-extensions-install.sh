@@ -8,7 +8,7 @@ sub_gnome_shell_extensions_all_install () {
 
 sub_gnome_shell_extensions_all_install_via_gext () {
 
-	echo sub_gnome_shell_extensions_all_install_via_gext
+	#echo sub_gnome_shell_extensions_all_install_via_gext
 
 	local the_extension_list=${opt_gnome_shell_extensions_install}
 
@@ -26,7 +26,10 @@ sys_gnome_shell_extensions_each_install_via_gext () {
 
 	local the_extension_id="${1}"
 
+	echo
+	echo gext -F install "${the_extension_id}"
 	gext -F install "${the_extension_id}"
+	echo
 
 
 	local the_extensions_root_dir_path="${HOME}/.local/share/gnome-shell/extensions"
@@ -40,7 +43,7 @@ sys_gnome_shell_extensions_each_install_via_gext () {
 	echo
 
 
-	sys_gnome_shell_extensions_each_copy_to_skel_dir "${the_extension_id}"
+	#sys_gnome_shell_extensions_each_copy_to_skel_dir "${the_extension_id}"
 
 }
 
