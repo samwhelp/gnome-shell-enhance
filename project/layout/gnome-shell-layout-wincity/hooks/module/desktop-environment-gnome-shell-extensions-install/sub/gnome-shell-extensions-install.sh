@@ -4,6 +4,61 @@ sub_gnome_shell_extensions_all_install () {
 
 	sub_gnome_shell_extensions_all_install_via_gext
 
+	sub_gnome_shell_extensions_all_enabled_via_gext
+
+	sub_gnome_shell_extensions_all_disabled_via_gext
+
+}
+
+sub_gnome_shell_extensions_all_enabled_via_gext () {
+
+	local the_extension_list=${opt_gnome_shell_extensions_enabled}
+
+	local the_extension_id
+
+	for the_extension_id in ${the_extension_list}; do
+
+		sys_gnome_shell_extensions_each_enabled_via_gext "${the_extension_id}"
+
+	done
+
+}
+
+
+sys_gnome_shell_extensions_each_enabled_via_gext () {
+
+	local the_extension_id="${1}"
+
+	echo
+	echo gext enable "${the_extension_id}"
+	gext enable "${the_extension_id}"
+	echo
+
+}
+
+sub_gnome_shell_extensions_all_disabled_via_gext () {
+
+	local the_extension_list=${opt_gnome_shell_extensions_disabled}
+
+	local the_extension_id
+
+	for the_extension_id in ${the_extension_list}; do
+
+		sys_gnome_shell_extensions_each_disabled_via_gext "${the_extension_id}"
+
+	done
+
+}
+
+sys_gnome_shell_extensions_each_disabled_via_gext () {
+
+	local the_extension_id="${1}"
+
+	echo
+	echo gext disable "${the_extension_id}"
+	gext disable "${the_extension_id}"
+	echo
+
 }
 
 sub_gnome_shell_extensions_all_install_via_gext () {
