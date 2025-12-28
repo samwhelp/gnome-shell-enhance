@@ -45,6 +45,8 @@ sys_gnome_shell_extensions_each_install_via_gext () {
 
 	#sys_gnome_shell_extensions_each_copy_to_skel_dir "${the_extension_id}"
 
+	sys_gnome_shell_extensions_each_dconf_load_config "${the_extension_id}"
+
 }
 
 sys_gnome_shell_extensions_each_copy_to_skel_dir () {
@@ -65,4 +67,20 @@ sys_gnome_shell_extensions_each_copy_to_skel_dir () {
 	sudo cp -rfT "${src_extension_dir_path}" "${des_extension_dir_path}"
 	echo
 
+}
+
+sys_gnome_shell_extensions_each_dconf_load_config () {
+
+	local the_extension_id="${1}"
+
+	local the_config_file_path="${base_dir_path}/asset/config/${the_extension_id}/dconf-db/gnome-shell-extension-${the_extension_id}.conf"
+
+	if ! [ -e "${the_config_file_path}" ]; then
+		return
+	fi
+
+	echo
+	echo 'dconf load -f / < '"${the_config_file_path}"
+	dconf load -f / < "${the_config_file_path}"
+	echo
 }
