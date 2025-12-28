@@ -28,4 +28,36 @@ sys_gnome_shell_extensions_each_install_via_gext () {
 
 	gext -F install "${the_extension_id}"
 
+
+	local the_extensions_root_dir_path="${HOME}/.local/share/gnome-shell/extensions"
+	local the_extension_schemas_dir_path="${the_extensions_root_dir_path}/${the_extension_id}/schemas"
+
+	mkdir -p "${the_extension_schemas_dir_path}"
+
+	echo glib-compile-schemas "${the_extension_schemas_dir_path}"
+	glib-compile-schemas "${the_extension_schemas_dir_path}"
+
+
+	#sys_gnome_shell_extensions_each_copy_to_skel_dir "${the_extension_id}"
+
+}
+
+sys_gnome_shell_extensions_each_copy_to_skel_dir () {
+
+	local the_extension_id="${1}"
+
+	local src_extensions_root_dir_path="${HOME}/.local/share/gnome-shell/extensions"
+	local des_extensions_root_dir_path="/etc/skel/.local/share/gnome-shell/extensions"
+
+	local src_extension_dir_path="${src_extensions_root_dir_path}/${the_extension_id}"
+	local des_extension_dir_path="${des_extensions_root_dir_path}/${the_extension_id}"
+
+	mkdir -p "${src_extension_dir_path}"
+	sudo mkdir -p "${des_extension_dir_path}"
+
+	echo
+	echo sudo cp -rfT "${src_extension_dir_path}" "${des_extension_dir_path}"
+	sudo cp -rfT "${src_extension_dir_path}" "${des_extension_dir_path}"
+	echo
+
 }
