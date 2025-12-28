@@ -1,2 +1,3 @@
+desktop-environment-gnome-shell-extensions-cli
 base-dconf-system-db-init
 base-gsettings-schema-compile
