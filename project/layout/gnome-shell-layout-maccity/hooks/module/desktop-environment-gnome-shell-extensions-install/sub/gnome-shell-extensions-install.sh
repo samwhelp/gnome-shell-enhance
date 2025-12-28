@@ -34,11 +34,13 @@ sys_gnome_shell_extensions_each_install_via_gext () {
 
 	mkdir -p "${the_extension_schemas_dir_path}"
 
+	echo
 	echo glib-compile-schemas "${the_extension_schemas_dir_path}"
 	glib-compile-schemas "${the_extension_schemas_dir_path}"
+	echo
 
 
-	#sys_gnome_shell_extensions_each_copy_to_skel_dir "${the_extension_id}"
+	sys_gnome_shell_extensions_each_copy_to_skel_dir "${the_extension_id}"
 
 }
 
