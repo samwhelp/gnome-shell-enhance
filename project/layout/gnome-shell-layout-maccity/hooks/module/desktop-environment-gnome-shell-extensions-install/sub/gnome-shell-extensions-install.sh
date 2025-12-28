@@ -10,7 +10,15 @@ sub_gnome_shell_extensions_all_install_via_gext () {
 
 	echo sub_gnome_shell_extensions_all_install_via_gext
 
-	sys_gnome_shell_extensions_each_install_via_gext "blur-my-shell@aunetx"
+	local the_extension_list=${opt_gnome_shell_extensions_install}
+
+	local the_extension_id
+
+	for the_extension_id in ${the_extension_list}; do
+
+		sys_gnome_shell_extensions_each_install_via_gext "${the_extension_id}"
+
+	done
 
 }
 
