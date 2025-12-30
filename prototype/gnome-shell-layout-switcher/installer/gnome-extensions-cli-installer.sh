@@ -6,6 +6,13 @@
 #echo "run: ${0}"
 
 
+##
+## ## Link
+##
+## * https://github.com/samwhelp/gnome-shell-enhance/blob/main/prototype/gnome-shell-layout-switcher/installer/gnome-extensions-cli-installer.sh
+##
+
+
 
 
 ##
