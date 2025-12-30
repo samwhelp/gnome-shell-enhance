@@ -26,3 +26,10 @@ layout-maccity:
 layout-wincity:
 	./switcher/gnome-shell-layout-wincity.sh
 .PHONY: layout-wincity
+
+
+
+
+gext-install:
+	./installer/gnome-extensions-cli-installer.sh
+.PHONY: gext-install
