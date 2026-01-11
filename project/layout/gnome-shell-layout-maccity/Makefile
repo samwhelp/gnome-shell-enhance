@@ -10,13 +10,13 @@ help:
 	@echo '	$$ make'
 	@echo '	$$ make help'
 	@echo
-	@echo '	$$ make build'
+	@echo '	$$ make install'
 	@echo
 .PHONY: help
 
 
 
 
-build:
-	./build.sh
-.PHONY: build
+install:
+	./install.sh
+.PHONY: install
