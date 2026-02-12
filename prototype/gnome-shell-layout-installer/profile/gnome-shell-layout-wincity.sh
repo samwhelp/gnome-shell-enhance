@@ -15,6 +15,16 @@
 
 
 
+REF_GNOME_SHELL_EXTENSIONS_INSTALL=(
+	"blur-my-shell@aunetx"
+	"arcmenu@arcmenu.com"
+	"date-menu-formatter@marcinjakubowski.github.com"
+	"dash-to-panel@jderose9.github.com"
+)
+
+
+
+
 REF_GNOME_SHELL_EXTENSIONS_ENABLE=(
 	"user-theme@gnome-shell-extensions.gcampax.github.com"
 	"status-icons@gnome-shell-extensions.gcampax.github.com"
@@ -23,6 +33,7 @@ REF_GNOME_SHELL_EXTENSIONS_ENABLE=(
 	"date-menu-formatter@marcinjakubowski.github.com"
 	"dash-to-panel@jderose9.github.com"
 )
+
 
 
 
@@ -35,9 +46,25 @@ REF_GNOME_SHELL_EXTENSIONS_DISABLE=(
 
 
 
+
 ##
 ## ## Model
 ##
+
+sys_gnome_shell_extensions_install () {
+
+	local the_extension_list=${REF_GNOME_SHELL_EXTENSIONS_INSTALL[@]}
+
+	local the_extension_id
+
+	for the_extension_id in ${the_extension_list[@]}; do
+		echo
+		echo gext enable "${the_extension_id}"
+		gext enable "${the_extension_id}"
+		echo
+	done
+
+}
 
 sys_gnome_shell_extensions_enable () {
 
@@ -77,6 +104,8 @@ sys_gnome_shell_extensions_disable () {
 ##
 
 mod_gnome_shell_layout_install () {
+
+	sys_gnome_shell_extensions_install
 
 	sys_gnome_shell_extensions_enable
 
