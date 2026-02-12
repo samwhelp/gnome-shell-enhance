@@ -100,6 +100,58 @@ sys_gnome_shell_extensions_disable () {
 
 
 ##
+## ## Model / Config
+##
+
+sys_gnome_shell_extensions_config () {
+
+	sys_gnome_shell_extensions_config_for_dash_to_panel
+
+	sys_gnome_shell_extensions_config_for_arcmenu
+
+	sys_gnome_shell_extensions_config_for_date_menu_formatter
+
+	sys_gnome_shell_extensions_config_for_blur_my_shell
+
+	return
+}
+
+sys_gnome_shell_extensions_config_for_dash_to_panel () {
+
+dconf load / << __EOF__
+
+__EOF__
+
+}
+
+sys_gnome_shell_extensions_config_for_arcmenu () {
+
+dconf load / << __EOF__
+
+__EOF__
+
+}
+
+sys_gnome_shell_extensions_config_for_date_menu_formatter () {
+
+dconf load / << __EOF__
+
+__EOF__
+
+}
+
+sys_gnome_shell_extensions_config_for_blur_my_shell () {
+
+dconf load / << __EOF__
+
+__EOF__
+
+}
+
+
+
+
+##
 ## ## Portal
 ##
 
