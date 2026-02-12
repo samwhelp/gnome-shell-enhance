@@ -24,6 +24,14 @@
 
 ## Layout
 
+| Prototype |
+| --------- |
+| [gnome-shell-layout-wincity](https://github.com/samwhelp/gnome-shell-enhance/tree/main/project/layout/gnome-shell-layout-wincity) |
+| [gnome-shell-layout-maccity](https://github.com/samwhelp/gnome-shell-enhance/tree/main/project/layout/gnome-shell-layout-maccity) |
+
+
+
+
 | Distro |
 | ------ |
 | Ubuntu / [gnome-shell-layout](https://github.com/samwhelp/ubuntu-gnome-shell-adjustment/tree/main/project/gnome-shell-layout) |
