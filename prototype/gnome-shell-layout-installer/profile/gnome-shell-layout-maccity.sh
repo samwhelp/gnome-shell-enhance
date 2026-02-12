@@ -217,9 +217,13 @@ __EOF__
 
 mod_gnome_shell_layout_install () {
 
+	sys_gnome_shell_extensions_install
+
 	sys_gnome_shell_extensions_enable
 
 	sys_gnome_shell_extensions_disable
+
+	sys_gnome_shell_extensions_config
 
 }
 

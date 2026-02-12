@@ -222,6 +222,8 @@ mod_gnome_shell_layout_install () {
 
 	sys_gnome_shell_extensions_disable
 
+	sys_gnome_shell_extensions_config
+
 }
 
 
