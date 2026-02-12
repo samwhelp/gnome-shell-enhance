@@ -1,6 +1,6 @@
 
 
-# Gnome Shell / layout-switcher
+# Gnome Shell / layout-installer
 
 
 
