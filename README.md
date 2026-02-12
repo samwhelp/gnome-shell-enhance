@@ -19,10 +19,10 @@
 
 ## Layout
 
-| Prototype |
-| --------- |
-| [gnome-shell-layout-wincity](https://github.com/samwhelp/gnome-shell-enhance/tree/main/project/layout/gnome-shell-layout-wincity) |
-| [gnome-shell-layout-maccity](https://github.com/samwhelp/gnome-shell-enhance/tree/main/project/layout/gnome-shell-layout-maccity) |
+| Prototype | Project |
+| --------- | ------- |
+| [gnome-shell-layout-wincity](https://github.com/samwhelp/gnome-shell-enhance/tree/main/project/layout/gnome-shell-layout-wincity) | [Project](https://github.com/samwhelp/gnome-shell-adjustment/tree/main/project/gnome-shell-layout/gnome-shell-layout-advance-full/profile/gnome-shell-layout-wincity) |
+| [gnome-shell-layout-maccity](https://github.com/samwhelp/gnome-shell-enhance/tree/main/project/layout/gnome-shell-layout-maccity) | [Project](https://github.com/samwhelp/gnome-shell-adjustment/tree/main/project/gnome-shell-layout/gnome-shell-layout-advance-full/profile/gnome-shell-layout-maccity) |
 
 
 
