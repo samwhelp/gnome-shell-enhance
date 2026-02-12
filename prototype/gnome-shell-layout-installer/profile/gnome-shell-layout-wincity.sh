@@ -59,8 +59,8 @@ sys_gnome_shell_extensions_install () {
 
 	for the_extension_id in ${the_extension_list[@]}; do
 		echo
-		echo gext enable "${the_extension_id}"
-		gext enable "${the_extension_id}"
+		echo gext install "${the_extension_id}"
+		gext install "${the_extension_id}"
 		echo
 	done
 
