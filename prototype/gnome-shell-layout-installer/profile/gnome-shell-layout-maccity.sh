@@ -76,7 +76,7 @@ sys_gnome_shell_extensions_disable () {
 ## ## Portal
 ##
 
-mod_gnome_shell_layout_switch () {
+mod_gnome_shell_layout_install () {
 
 	sys_gnome_shell_extensions_enable
 
@@ -91,7 +91,7 @@ mod_gnome_shell_layout_switch () {
 
 __main__ () {
 
-	mod_gnome_shell_layout_switch
+	mod_gnome_shell_layout_install
 
 }
 
