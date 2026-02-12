@@ -120,6 +120,32 @@ sys_gnome_shell_extensions_config_for_dash_to_dock () {
 
 dconf load / << __EOF__
 
+
+[org/gnome/shell/extensions/dash-to-dock]
+apply-custom-theme=false
+autohide=false
+autohide-in-fullscreen=true
+background-color='#ffffff'
+background-opacity=0.80000000000000004
+click-action='cycle-windows'
+dash-max-icon-size=36
+dock-fixed=true
+dock-position='BOTTOM'
+extend-height=false
+isolate-locations=true
+middle-click-action='launch'
+scroll-action='cycle-windows'
+shift-click-action='previews'
+shift-middle-click-action='quit'
+shortcut=['']
+shortcut-text=''
+show-mounts=false
+show-show-apps-button=true
+show-trash=false
+show-windows-preview=false
+transparency-mode='DYNAMIC'
+
+
 __EOF__
 
 }
@@ -128,6 +154,31 @@ sys_gnome_shell_extensions_config_for_arcmenu () {
 
 dconf load / << __EOF__
 
+
+[org/gnome/shell/extensions/apps-menu]
+apps-menu-toggle-menu=['<Alt>F3']
+
+
+[org/gnome/shell/extensions/arcmenu]
+activate-on-hover=true
+arcmenu-hotkey=['<Alt>F1']
+arcmenu-hotkey-overlay-key-enabled=false
+enable-horizontal-flip=true
+force-menu-location='Off'
+hide-overview-on-startup=false
+hotkey-open-primary-monitor=false
+#menu-button-icon='start-here'
+menu-item-grid-icon-size='Default'
+menu-item-icon-size='Large'
+menu-layout='Whisker'
+override-menu-theme=false
+position-in-panel='Left'
+prefs-visible-page=0
+searchbar-default-top-location='Bottom'
+show-activities-button=false
+vert-separator=true
+
+
 __EOF__
 
 }
@@ -135,6 +186,15 @@ __EOF__
 sys_gnome_shell_extensions_config_for_date_menu_formatter () {
 
 dconf load / << __EOF__
+
+
+[org/gnome/shell/extensions/date-menu-formatter]
+formatter='01_luxon'
+pattern='HH:MM:ss yyyy-MM-dd EEEE'
+text-align='center'
+use-default-calendar=true
+use-default-locale=true
+
 
 __EOF__
 
