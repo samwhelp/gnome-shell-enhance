@@ -15,6 +15,10 @@
 
 
 
+##
+## ## Option
+##
+
 REF_GNOME_SHELL_EXTENSIONS_ENABLE=(
 	"user-theme@gnome-shell-extensions.gcampax.github.com"
 	"status-icons@gnome-shell-extensions.gcampax.github.com"
@@ -39,6 +43,13 @@ REF_GNOME_SHELL_EXTENSIONS_DISABLE=(
 
 ##
 ## ## Model
+##
+
+
+
+
+##
+## ## Model / Extension
 ##
 
 sys_gnome_shell_extensions_enable () {
