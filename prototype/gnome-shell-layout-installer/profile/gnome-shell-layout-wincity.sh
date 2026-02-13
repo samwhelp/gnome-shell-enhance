@@ -15,6 +15,10 @@
 
 
 
+##
+## ## Option
+##
+
 REF_GNOME_SHELL_EXTENSIONS_INSTALL=(
 	"blur-my-shell@aunetx"
 	"arcmenu@arcmenu.com"
@@ -49,6 +53,13 @@ REF_GNOME_SHELL_EXTENSIONS_DISABLE=(
 
 ##
 ## ## Model
+##
+
+
+
+
+##
+## ## Model / Extension
 ##
 
 sys_gnome_shell_extensions_install () {
