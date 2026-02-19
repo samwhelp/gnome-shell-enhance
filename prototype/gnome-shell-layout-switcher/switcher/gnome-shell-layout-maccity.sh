@@ -75,7 +75,7 @@ sys_gnome_shell_extensions_disable () {
 
 	for the_extension_id in ${the_extension_list[@]}; do
 		echo
-		echo gext enable "${the_extension_id}"
+		echo gext disable "${the_extension_id}"
 		gext disable "${the_extension_id}"
 		echo
 	done

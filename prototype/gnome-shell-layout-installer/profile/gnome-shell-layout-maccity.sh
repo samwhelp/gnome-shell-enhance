@@ -70,8 +70,18 @@ sys_gnome_shell_extensions_install () {
 
 	for the_extension_id in ${the_extension_list[@]}; do
 		echo
-		echo gext install "${the_extension_id}"
-		gext install "${the_extension_id}"
+		echo gext install -F "${the_extension_id}"
+		gext install -F "${the_extension_id}"
+		echo
+
+		echo
+		echo mkdir -p "${HOME}/.local/share/gnome-shell/extensions/${the_extension_id}/schemas"
+		mkdir -p "${HOME}/.local/share/gnome-shell/extensions/${the_extension_id}/schemas"
+		echo
+
+		echo
+		echo glib-compile-schemas "${HOME}/.local/share/gnome-shell/extensions/${the_extension_id}/schemas"
+		glib-compile-schemas "${HOME}/.local/share/gnome-shell/extensions/${the_extension_id}/schemas"
 		echo
 	done
 
