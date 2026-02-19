@@ -70,8 +70,8 @@ sys_gnome_shell_extensions_install () {
 
 	for the_extension_id in ${the_extension_list[@]}; do
 		echo
-		echo gext install -F "${the_extension_id}"
-		gext install -F "${the_extension_id}"
+		echo gext -F install "${the_extension_id}"
+		gext -F install "${the_extension_id}"
 		echo
 
 		echo
