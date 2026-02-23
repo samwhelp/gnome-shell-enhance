@@ -24,6 +24,12 @@
 
 ## Layout
 
+| Link | GitHub |
+| ---- | ------ |
+| [make-gnome-shell-layout-wincity](https://samwhelp.github.io/make-gnome-shell-layout-wincity/) | [GitHub](https://github.com/samwhelp/make-gnome-shell-layout-wincity) |
+| [make-gnome-shell-layout-maccity](https://samwhelp.github.io/make-gnome-shell-layout-maccity/) | [GitHub](https://github.com/samwhelp/make-gnome-shell-layout-maccity) |
+
+
 | Prototype | Project | Full |
 | --------- | ------- | ---- |
 | [gnome-shell-layout-wincity.sh](https://github.com/samwhelp/gnome-shell-enhance/blob/main/prototype/gnome-shell-layout-installer/profile/gnome-shell-layout-wincity.sh) | [gnome-shell-layout-wincity](https://github.com/samwhelp/gnome-shell-enhance/tree/main/project/layout/gnome-shell-layout-wincity) | [Full](https://github.com/samwhelp/gnome-shell-adjustment/tree/main/project/gnome-shell-layout/gnome-shell-layout-advance-full/profile/gnome-shell-layout-wincity) |
