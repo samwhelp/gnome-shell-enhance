@@ -54,6 +54,7 @@
 | Link | GitHub |
 | ---- | ------ |
 | [Gnome Shell Adjustment](https://samwhelp.github.io/gnome-shell-adjustment/) | [GitHub](https://github.com/samwhelp/gnome-shell-adjustment) |
+| [make-gnome-shell-style](https://samwhelp.github.io/make-gnome-shell-style/) | [GitHub](https://github.com/samwhelp/make-gnome-shell-style) |
 
 
 
